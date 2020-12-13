@@ -36,7 +36,7 @@
 
 ## 🚀 Technologies
 
-Technologies that I used to develop this API:
+Technologies that I used to develop this project:
 
 - MySQL
 - Node.js
