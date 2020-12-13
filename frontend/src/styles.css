@@ -1,0 +1,11 @@
+div .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 30px 0px;
+}
+
+.errors {
+    color: red;
+}

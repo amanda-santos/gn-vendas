@@ -15,9 +15,10 @@ module.exports = {
   async store(req, res) {
     const { name, cpf, phone_number, product_name, value } = req.body;
 
-    if ((name.length < 1 || name.length > 255) ||
-      cpf.length < 11 ||
-      (phone_number.length < 10 || phone_number.length > 11) ||
+    if (name.length < 1 || name.length > 255 ||
+      cpf.length < 11 || cpf.length > 14 ||
+      phone_number.length < 10 || phone_number.length > 11 ||
+      !(/\b[A-Za-zÀ-ú][A-Za-zÀ-ú]+,?\s[A-Za-zÀ-ú][A-Za-zÀ-ú]{2,19}\b/.test(name)) ||
       !(/^[0-9]*$/.test(cpf)) ||
       !(/^[1-9]{2}9?[0-9]{8}$/.test(phone_number))) {
       return res.status(400).json({ error: 'Dados inválidos.' });
