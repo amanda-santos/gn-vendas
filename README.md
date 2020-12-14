@@ -53,8 +53,8 @@ Technologies that I used to develop this project:
 Running the backend:
 - Inside the backend folder, run `npm i` or `yarn` to install the dependencies
 - Alter `config/database.js`, adding the setup of your MySQL database
-- Run `npm sequelize db:create` or `yarn sequelize db:create` to create the database
-- Run the migrations with `npm sequelize db:migrate` or `yarn sequelize db:migrate`
+- Run `npx sequelize db:create` or `yarn sequelize db:create` to create the database
+- Run the migrations with `npx sequelize db:migrate` or `yarn sequelize db:migrate`
 - Finally, run server with `npm run dev` or `yarn dev`
 
 Running the frontend:
